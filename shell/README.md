@@ -12,7 +12,7 @@ with a keyboard instead of controlling graphical user interfaces
 (GUIs) with a mouse/keyboard combination.
 
 Use a browser to open the tutorial on github, located at:
-    https://github.com/swcarpentry/boot-camps/tree/2013-05-krakow
+    https://https://github.com/apawlik/2014-01-14-manchester
 
 Click on the directory named `shell`.
 
@@ -30,16 +30,13 @@ by manipulating some experimental data from a hearing test. To get
 the data for this test, you will need internet access and an open terminal. 
 Just enter the command:
 
-    git clone -b 2013-05-krakow https://github.com/swcarpentry/boot-camps.git
+    git clone https://github.com/apawlik/2014-01-14-manchester.git
 
 Followed by:
 
-    cd boot-camps
-    git checkout 2013-05-krakow
-    cd
+    cd 2014-01-14-manchester
 
-These 2 commands will grab all of the data needed for this workshop from the
-internet, and the last one will return you to where you were.
+The git command will grab all of the data needed for this workshop from GitHub.
 
 # Let's get started
 
