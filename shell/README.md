@@ -1,8 +1,8 @@
 # The Shell
 
-**Material by Milad Fatenejad, Sasha Wood, and Radhika Khetani**
+**Material by Milad Fatenejad, Sasha Wood, Radhika Khetani and Karin Lagesen**
 
-*Modified by Karin Lagesen*
+*Modified by Shoaib Sufi*
 
 # What is the shell and how do I access the shell?
 
