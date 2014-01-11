@@ -12,7 +12,7 @@ with a keyboard instead of controlling graphical user interfaces
 (GUIs) with a mouse/keyboard combination.
 
 Use a browser to open the tutorial on github, located at:
-    https://https://github.com/apawlik/2014-01-14-manchester
+    https://github.com/apawlik/2014-01-14-manchester
 
 Click on the directory named `shell`.
 
@@ -20,8 +20,8 @@ A *terminal* is a program you run that gives you access to the
 shell. There are many different terminal programs that vary across
 operating systems.
 	 
-To open a terminal, just single click on the "Terminal" icon on the
-Desktop.
+To open a terminal (on Linux), just single click on the "Terminal" icon on the
+Desktop. If you don't know how to start the terminal program on your platform please ask for help.
 
 # The Example: Manipulating Experimental Data Files
 
@@ -32,11 +32,11 @@ Just enter the command:
 
     git clone https://github.com/apawlik/2014-01-14-manchester.git
 
+The git command will grab all of the data needed for this workshop from GitHub.
+
 Followed by:
 
     cd 2014-01-14-manchester
-
-The git command will grab all of the data needed for this workshop from GitHub.
 
 # Let's get started
 
@@ -101,16 +101,17 @@ you will see that `testfile` is gone.
 **Changing Directories**
 
 Now, let's move to a different directory. The command `cd` (change
-directory) is used to move around. Let's move into the `boot-camps`
+directory) is used to move around. We used `cd` earlier to get us into the `2014-01-14-manchester` directory.
+Now let's move into the `shells`
 directory. Enter the following command:
 
-    cd boot-camps
+    cd shell
 
 Now use the `ls` command to see what is inside this directory. 
-This directory contains all of the material for this boot camp. Now
+This directory contains all of the material for the shell part of this boot camp. Now
 move to the directory containing the data for the shell tutorial:
 
-    cd shell
+    cd data
 
 If you enter the `cd` command by itself, you will return to the home
 directory. Try this, and then navigate back to the `shell`
@@ -148,17 +149,17 @@ give `ls` the names of other directories to view. Navigate to the
 home directory if you are not already there. Then enter the
 command:
 
-    ls boot-camps
+    ls 2014-01-14-manchester
 
-This will list the contents of the `boot-camps` directory without
+This will list the contents of the `2014-01-14-manchester` directory without
 you having to navigate there. Now enter:
 
-    ls boot-camps/shell
+    ls 2014-01-14-manchester/shell
 
 This prints the contents of `shell`. The `cd` command works in a
 similar way. Try entering:
 
-    cd boot-camps/shell
+    cd 2014-01-14-manchester/shell
 
 and you will jump directly to `shell` without having to go through
 the intermediate directory.
@@ -180,12 +181,12 @@ referred to as the *root directory*.
 
 First, figure out again what the full path to your home directory was. Now enter the following command (replace the stuff in <> with the results from `pwd`).
 
-    cd <pwd-results>/boot-camps/shell
+    cd <pwd-results>/2014-01-14-manchester/shell
 
 This jumps to `shell`. Now go back to the home directory. We saw
 earlier that the command
 
-    cd boot-camps/shell
+    cd 2014-01-14-manchester/shell
 
 had the same effect - it took us to the `shell` directory. But,
 instead of specifying the full path which started with a /, 
@@ -218,7 +219,7 @@ above your current directory. Thus:
 
     ls ..
 
-prints the contents of the ~/boot-camps directory. You can chain
+prints the contents of the ~/2014-01-14-manchester directory. You can chain
 these together, so:
 
     ls ../../
@@ -271,7 +272,7 @@ commands to get this data into shape. By the end we would like to:
 
 **Wild cards**
 
-Navigate to the `~/boot-camps/shell/data/THOMAS` directory. This
+Navigate to the `~/2014-01-14-manchester/shell/data/THOMAS` directory. This
 directory contains our hearing test data for THOMAS. If we type `ls`,
 we will see that there are a bunch of files which are just four digit
 numbers. By default, `ls` lists all of the files in a given
@@ -327,7 +328,7 @@ directory name. For example, enter:
     cd b<tab>
 
 The shell will fill in the rest of the directory name for
-`boot-camps`. Press enter to enter the boot camp directory. Next, go
+`2014-01-14-manchester`. Press enter to enter the boot camp directory. Next, go
 into the shell directory and do:
 
     ls 3<tab><tab>
@@ -394,7 +395,7 @@ this directory. Now, try to run the program by entering:
     hello
 
 You should get an error saying that hello cannot be found. That is
-because the directory `<your home directory>/boot-camps/shell` is not in the
+because the directory `<your home directory>/2014-01-14-manchester/shell` is not in the
 `PATH`. You can run the `hello` program by entering:
 
     ./hello
@@ -404,7 +405,7 @@ directory. This tells the shell to run the `hello` program which is
 located right here. So, you can run any program by entering the path
 to that program. You can run `hello` equally well by specifying:
 
-    <path to home directory>/boot-camps/shell/hello
+    <path to home directory>/2014-01-14-manchester/shell/hello
 
 Or by entering:
 
@@ -436,12 +437,12 @@ is where the name comes from, `cat` is short for concatenate).
 * * * *
 **Short Exercises**
 
-1.  Print out the contents of the `~/boot-camps/shell/dictionary.txt`
+1.  Print out the contents of the `~/2014-01-14-manchester/shell/dictionary.txt`
     file. What does this file contain?
 
 2.  Without changing directories, (you should still be in `shell`),
     use one short command to print the contents of all of the files in
-    the `<your home directory>/boot-camps/shell/data/THOMAS` directory.
+    the `<your home directory>/2014-01-14-manchester/shell/data/THOMAS` directory.
 
 * * * *
 
@@ -449,7 +450,7 @@ is where the name comes from, `cat` is short for concatenate).
 be annoying to use. The program, `less`, is useful for this
 case. Enter the following command:
 
-    less ~/boot-camps/shell/dictionary.txt
+    less ~/2014-01-14-manchester/shell/dictionary.txt
 
 `less` opens the file, and lets you navigate through it. The commands
 are identical to the `man` program. Use "space" to go forward and hit
@@ -481,7 +482,7 @@ in reverse while using `less`.
 ## Redirection
 
 Let's turn to the experimental data from the hearing tests. 
-This data is located in the `~/boot-camps/shell/data`
+This data is located in the `~/2014-01-14-manchester/shell/data`
 directory. Each subdirectory corresponds to a particular participant
 in the study. Navigate to the `Bert` subdirectory in `data`.  First,
 press `ls` to look at the files. There
@@ -509,7 +510,7 @@ exists.
 Use `>>`, to append the contents of all of the files whose name contains the
 number 4 in the directory:
 
-    <your home directory>/boot-camps/shell/data/gerdal
+    <your home directory>/2014-01-14-manchester/shell/data/gerdal
 
 to the existing `all_data` file. Thus, when you are done `all_data`
 should contain all of the experiment data from Bert and any
@@ -709,7 +710,7 @@ Once you have looked at the new file, remove both toBeSorted and Sorted.
 
 * * * *
 
-Let's navigate back to `~/boot-camps/shell/data`. Enter the following command:
+Let's navigate back to `~/2014-01-14-manchester/shell/data`. Enter the following command:
 
     wc Bert/* | sort -k 3 -n
 
