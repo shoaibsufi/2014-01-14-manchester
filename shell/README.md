@@ -133,6 +133,10 @@ This will open the manual page for `ls`. Use the space key to go
 forward and b to go backwards. When you are done reading, just hit `q`
 to exit.
 
+Note if you are using Git Bash on Windows this does not have man but
+people have hosted the man pages at various sites which is useful for
+people on any platform e.g www.linuxmanpages.com
+
 Programs that are run from the shell can get extremely complicated. To
 see an example, open up the manual page for the `find` program,
 which we will use later this session. No one can possibly learn all of
@@ -198,7 +202,7 @@ depending on what is most convenient. If we are in the home directory,
 it is more convenient to just enter the relative path since it
 involves less typing.
 
-Now, list the contents of the /bin directory. Do you see anything
+Now, list the contents of the `/bin` directory. Do you see anything
 familiar in there?
 
 
