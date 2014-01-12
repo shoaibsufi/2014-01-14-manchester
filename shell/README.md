@@ -595,7 +595,7 @@ the same number of characters:
 
     wc all_data
 
-Every character in the file takes up one byte of disk space. Thus, the
+Every character in the file takes up one byte of disk space (as it contain's `ASCII text`. Thus, the
 size of the file in bytes should also be 10445. Let's confirm this:
 
     ls -l all_data
@@ -613,9 +613,9 @@ see the individual counts, just the total. Of course, I could just do:
 
     wc all_data
 
-Since this file is a concatenation of the smaller files. Sure, this
+Since this file is a concatenation of the smaller files. Yes, this
 works, but I had to create the `all_data` file to do this. Thus, I
-have wasted a precious 7062 bytes of hard disk space. We can do this
+have wasted a precious 10445 bytes of hard disk space. We can do this
 *without* creating a temporary file, but first I have to show you two
 more commands: `head` and `tail`. These commands print the first few,
 or last few, lines of a file, respectively. Try them out on
@@ -638,7 +638,7 @@ gerdal/*4*` and send it into the `tail -n 1` command. The `|`
 character (called pipe) is used for this purpose. Enter the following
 command:
 
-    wc Bert/* gerdal/Data0559 | tail -n 1
+    wc Bert/* gerdal/*4* | tail -n 1
 
 This will print only the total number of lines, characters, and words
 across all of these files. What is happening here? Well, `tail`, like
