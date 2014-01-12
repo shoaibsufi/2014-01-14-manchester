@@ -135,7 +135,7 @@ to exit.
 
 Note if you are using Git Bash on Windows this does not have man but
 people have hosted the man pages at various sites which is useful for
-people on any platform e.g www.linuxmanpages.com
+people on any platform e.g www.kernel.org/doc/man-pages/online_pages.html or www.linuxmanpages.com
 
 Programs that are run from the shell can get extremely complicated. To
 see an example, open up the manual page for the `find` program,
