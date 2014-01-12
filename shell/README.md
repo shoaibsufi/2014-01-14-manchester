@@ -329,7 +329,7 @@ lot of time. When you start typing out the name of a directory, then
 hit the tab key, the shell will try to fill in the rest of the
 directory name. For example, enter:
 
-    cd b<tab>
+    cd 2<tab>
 
 The shell will fill in the rest of the directory name for
 `2014-01-14-manchester`. Press enter to enter the boot camp directory. Next, go
@@ -356,7 +356,8 @@ The down arrow takes your forwards in the command history.
 ^-C will cancel the command you are writing, and give you a fresh prompt.
 
 ^-R will do a reverse-search through your command history.  This
-is very useful.
+is very useful. If you find a partial match you can keep pressing ^-R until
+you find the instance you are interested in.
 
 ## Which program? ##
 
