@@ -901,3 +901,37 @@ in `.txt`. You will have to use the `man` command to figure out how to
 search for files which do not match a certain name. 
 
 * * * * 
+
+# Calling MatLab from the shell
+
+In can be convenient to call MatLab from the command line.
+
+Using `nano` make a file called `hello.m` and put the following contents in and save the file:
+
+    disp(‘hello’)
+    exit()
+
+Then from the same directory call the following command:
+
+    matlab -nosplash -nodesktop -r hello –logfile out.txt
+   
+This calls matlab without a GUI, the filename is `hello.m` but the argument to -r is just *hello* and the output is written to a file called `out.txt` - you can use `nano` or `cat` to check the contents.
+
+Another way of calling MatLab is by using a *Here Document*. The Here Document redirects the output of a command block into the *stdin* of a program or command. In our current case the effect is that rather than putting the list of commands in a file and then calling `matlab` you can place them in the following way:
+
+    matlab -nosplash -nodesktop <<HEREMARKER
+    disp('hello')
+    exit()
+    HEREMARKER         
+
+One benefit of this approach is that you can keep all of your MatLab and bash commands in one file if this were a script.
+
+For more information about *Here Documents* please refer to http://www.tldp.org/LDP/abs/html/here-docs.html
+
+* * * *
+**short Exercise**
+
+Using the above example write a *Here Document* based script for MatLab, modify it's permissions and run it to test that it works.
+
+
+
