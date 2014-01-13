@@ -928,6 +928,8 @@ One benefit of this approach is that you can keep all of your MatLab and bash co
 
 For more information about *Here Documents* please refer to http://www.tldp.org/LDP/abs/html/here-docs.html
 
+Hint for me the location of `matlab` was */Applications/MATLAB_R2013a.app/bin/matlab*
+
 * * * *
 **short Exercise**
 
