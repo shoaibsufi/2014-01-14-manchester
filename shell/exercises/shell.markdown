@@ -356,11 +356,6 @@ more of the file.
   **Answer:**
   `$ cat 1000gp.vcf | ./chrom_stats.sh`
 
-* Finally, add a copy of this file to your folder in the class SVN repository.
-  1. `cp chrom_stats.sh /path/to/repo/participants/user/`
-  2. Add the file to subversion version control
-  3. Commit your changes
-
 **Fin.** 
 Comments, questions, and suggestions are encouraged and appreciated.
 Thanks to Tommy Guy, Jon Pipitone, Greg Wilson, and Elango Cheran for their help

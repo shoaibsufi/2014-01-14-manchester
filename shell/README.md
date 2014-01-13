@@ -931,7 +931,7 @@ Another way of calling MatLab is by using a *Here Document*. The Here Document r
 
 One benefit of this approach is that you can keep all of your MatLab and bash commands in one file if this were a script.
 
-For more information about *Here Documents* please refer to http://www.tldp.org/LDP/abs/html/here-docs.html
+For more information about *Here Documents* please refer to [The LDP's Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html/here-docs.html)
 
 * * * *
 **Short Exercise**
