@@ -911,7 +911,7 @@ For me the location of `matlab` was */Applications/MATLAB_R2013a.app/bin/matlab*
     MATLAB_LOCATION=/Applications/MATLAB_R2013a.app/bin
     export PATH=$MATLAB_LOCATION:$PATH
 
-Using `nano` make a file called `hello.m` and put the following contents in and save the file:
+Now using `nano` make a file called `hello.m` and put the following contents in and save the file:
 
     disp(‘hello’)
     exit()
@@ -934,9 +934,13 @@ One benefit of this approach is that you can keep all of your MatLab and bash co
 For more information about *Here Documents* please refer to http://www.tldp.org/LDP/abs/html/here-docs.html
 
 * * * *
-**short Exercise**
+**Short Exercise**
 
 Using the above example write a *Here Document* based script for MatLab, modify it's permissions and run it to test that it works.
+
+* * * *
+
+Please take a look at the [Shell Cheat Sheet] (https://github.com/apawlik/2014-01-14-manchester/blob/master/shell/shell_cheatsheet.md) to refresh what you have learned and to get a quick overview of some other topics. 
 
 
 
