@@ -845,8 +845,31 @@ then we pipe them to `xargs`.  `xargs` takes the items given to it
 and passes them as arguments to `grep`.  `xargs` generally only creates
 a single instance of `grep` (or whatever program it is running).
 
+* * * *
+**Optional Advanced Investigation**
+
+1. Use `man` and other resources to work out why:
+
+    find . -type f -print0 | xargs -0 grep Volume
+
+is better than the original:
+   
+    find . -type f -print | xargs grep Volume
+
+Modify the data directory to demonstrate this in practice.
+
+2. Use resources (e.g. online, man etc) to work out the pro's and con's of:
+
+    find . -type f -exec grep Volume {} +
+
+versus:
+
+    find . -type f -print | xargs grep Volume  
+
+Use the data directory to demonstrate your understanding, note the `time` command maybe helpful here. 
+
 * * * * 
-**Short Exercise**
+**Short Exercise** 
 
 Navigate to the `data` directory. Use one `find` command to perform each
 of the operations listed below (except number 2, which does not
@@ -854,7 +877,7 @@ require a `find` command):
 
 1.  Find any file whose name is "NOTES" within `data` and delete it 
 
-2.  Create a new directory called `cleaneddata`
+2.  Create a new directory called `cleaneddata` (note: this should in the same  directory as `data`)
 
 3.  Move all of the files within `data` to the `cleaneddata` directory
 
