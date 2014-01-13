@@ -906,6 +906,11 @@ search for files which do not match a certain name.
 
 In can be convenient to call MatLab from the command line.
 
+For me the location of `matlab` was */Applications/MATLAB_R2013a.app/bin/matlab*. If running `matlab` produces a *command not found* type of message then you can either use the full path for matlab or you can add it to your *PATH* which is the list of locations that the shell searches for commands and programs:
+
+    MATLAB_LOCATION=/Applications/MATLAB_R2013a.app/bin
+    export PATH=$MATLAB_LOCATION:$PATH
+
 Using `nano` make a file called `hello.m` and put the following contents in and save the file:
 
     disp(‘hello’)
@@ -915,9 +920,9 @@ Then from the same directory call the following command:
 
     matlab -nosplash -nodesktop -r hello –logfile out.txt
    
-This calls matlab without a GUI, the filename is `hello.m` but the argument to -r is just *hello* and the output is written to a file called `out.txt` - you can use `nano` or `cat` to check the contents.
+This calls matlab without a GUI, the filename is `hello.m` but the argument to -r is just *hello* and the output is written to stdout and a file called `out.txt` - you can use `nano` or `cat` to check the contents.
 
-Another way of calling MatLab is by using a *Here Document*. The Here Document redirects the output of a command block into the *stdin* of a program or command. In our current case the effect is that rather than putting the list of commands in a file and then calling `matlab` you can place them in the following way:
+Another way of calling MatLab is by using a *Here Document*. The Here Document redirects the output of a command block into the *stdin* of a program or command. In our current example, rather than putting the list of commands in a file and then calling `matlab` you can place them in the following way:
 
     matlab -nosplash -nodesktop <<HEREMARKER
     disp('hello')
@@ -927,8 +932,6 @@ Another way of calling MatLab is by using a *Here Document*. The Here Document r
 One benefit of this approach is that you can keep all of your MatLab and bash commands in one file if this were a script.
 
 For more information about *Here Documents* please refer to http://www.tldp.org/LDP/abs/html/here-docs.html
-
-Hint for me the location of `matlab` was */Applications/MATLAB_R2013a.app/bin/matlab*
 
 * * * *
 **short Exercise**
