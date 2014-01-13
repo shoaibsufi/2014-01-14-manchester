@@ -1,6 +1,6 @@
-# Shell
+# 1000 Genome Shell excercises
 
-Let's try out your new shell skills on some real data.
+Let's try out your new/existing shell skills on some real data.
 
 The file `1000gp.vcf` is a small sample (1%) of a very large text file
 containing human genetics data. Specifically, it describes genetic variation in
