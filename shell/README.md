@@ -942,5 +942,5 @@ Using the above example write a *Here Document* based script for MatLab, modify 
 
 Please take a look at the [Shell Cheat Sheet] (https://github.com/apawlik/2014-01-14-manchester/blob/master/shell/shell_cheatsheet.md) to refresh what you have learned and to get a quick overview of some other topics. 
 
-
+If you have reached this part of the document and you have time left or you would like some further practice after the workshop then please attempt the [1000 Genome Shell exercises](https://github.com/apawlik/2014-01-14-manchester/blob/master/shell/exercises/shell.markdown)
 
