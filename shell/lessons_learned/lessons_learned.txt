@@ -1,0 +1,38 @@
+This is without receiveing feedback from the class 
+
+I think asking them before if they 
+
+
+1) know what the shell is
+2) have used it before
+3) can write scripts
+
+Would be useful questions.
+
+The group was good at shell scripting - 50% and 50% not
+
+I think some topics needed covering which were not:
+
+stdin
+stdout
+stderr
+
+I also think
+
+;'s and `` in the shell was worth covering
+
+also was suprised that the material did not cover the enviroment specicially setting variable and then using the $PATH as an example (I would cover the subtlty beween export and none-export
+
+
+Also not sure if the notes are meant to be standalone but worth looknig around for other tutorials  - e.g. job control
+
+
+But overall need to tie into a scientific investigation much more - a workflow if you like.
+
+i.e.
+
+Data collection
+Data staging
+analysis
+results
+(conclusions for another time - I mean how does the shell help with this - not sure ?)
