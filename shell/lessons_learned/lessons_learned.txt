@@ -1,5 +1,10 @@
 This is without receiveing feedback from the class 
 
+1. useful to a advanced beginner (these are PhD students not School kids !!!)
+2. useful to an advanced scripter - additional resources and advanced excercises included
+3. (probably most important) has a motivating scientific example - cover data collection, data staging, analysis, results, (maybe something on referincing or how shell can help)
+4. Cheat sheet could just be an intro / cover background for the advanced user - anyway please see the lessons_learned/lessons_learned.txt for more info
+
 I think asking them before if they 
 
 
